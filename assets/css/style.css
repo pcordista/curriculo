@@ -2,7 +2,8 @@ body {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Ubuntu'
+	font-family: 'Ubuntu';
+	word-break: break-word;
 }
 
 a {
@@ -50,6 +51,13 @@ a {
     right: auto;
 }
 
+.l6 {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
 .l7 {
     width: 58.3333333333%;
     margin-left: auto;
@@ -86,16 +94,6 @@ a {
 .center-align {
 	text-align: center;
 	justify-content: center;
-}
-
-.darken {
-	background-color: #212121;
-	color: white;
-}
-
-.lighten {
-	background-color: white;
-	color: #212121;
 }
 
 .fontLight {
@@ -160,6 +158,12 @@ nav {
 	margin: 15px 
 }
 
+.interTitleMinus {
+	font-size: 1.1rem !important;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
 
 /*  */
 
@@ -186,4 +190,47 @@ nav {
 
 .darken-4 {
 	background-color: #0d47a1 !important;
+}
+
+.habcontrol {
+	height: 40px !important;
+}
+
+/* HEADER */
+
+#header {
+	text-align: right;
+	position: absolute;
+	right: 5px;
+	top: 10px
+}
+
+.btntoogle {
+	background-color: transparent !important;
+
+}
+
+/* FIM HEADER */
+
+
+@media screen and (max-width: 900px) { 
+	.container {
+		width: 100% !important
+	}
+	.contactControl {
+		display: flow-root
+	}
+	.s12 {
+		width: 100% !important
+	}
+	.contactDiv {
+		margin-bottom: 1rem;
+		padding-bottom: 1rem !important;
+		border-bottom: 1px solid lightgray
+	}
+
+	.centerControl {
+		border-left: inherit;
+		border-right: inherit;
+	}
 }

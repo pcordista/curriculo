@@ -2,29 +2,32 @@
 <head>
 
 
-  <meta http-equiv= "Content-Type" content= "text/html; charset=UTF-8" />
+  <meta http-equiv= "Content-Type" content= "text/html; charset=UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
   <!-- Compiled and minified CSS -->
-
-
+  <link rel="stylesheet" type="text/css" href="assets/css/night.css"  id="style">
   <script>
-
+    function toogle() {
+      var el = document.getElementById("style");
+      var imgbtn = document.getElementById("imgbtn");
+      if (el.href.match("assets/css/day.css")) {
+        el.href = "assets/css/night.css";
+        imgbtn.src = "assets/img/night.png";
+      } else {
+        el.href = "assets/css/day.css";
+        imgbtn.src = "assets/img/day.png";
+      }
+    }
 
   </script>
 </head>
 
 <body>
-  <header>
-    <button onclick="mudar()">text</button>
-    <script type="text/javascript">
-      function mudar() {
-        var element = document.getElementById("changed");
-        element.classList.remove("darken");
-        element.classList.add("lighten");
-      }
-    </script>
+  <header class="darken" id="header">
+    <button onclick="toogle()" class="btntoogle"><img src="assets/img/night.png" width="40px" id="imgbtn"></button>
   </header>
   <nav class="darken" id="changed">
     <div class="container">
@@ -57,7 +60,7 @@
           <div class="containerTitle fontBold">
             ENDEREÇO
           </div>
-          43 98402-4886
+          Rua Natal Delalibera, 78
         </div>
       </div>
     </div>
@@ -68,12 +71,13 @@
     <div class="container">
       <div class="row">
 
-        <div class="col s12 l4 darken" id="changed">
+        <div class="col s12 l4 darken" id="changed" style="padding-bottom: 2rem">
           <div class="photo center-align">
-            <img src="https://mindbodygreen-res.cloudinary.com/images/w_767,q_auto:eco,f_auto,fl_lossy/usr/QKNTXGf/james-dinicolantonio-pharmd.jpg" width="70%" class="circle">
+            <img src="assets/img/eu.jpg" width="70%" class="circle">
           </div>
           <div class="center-align">
-            <P> 21 Anos </P>
+            <P> 21 Anos<BR>Estudante de Eng. Eletrica<BR>099.305.209-61 </P>
+            
           </div>
           <div class=""></div>
           <div class="center-align">
@@ -97,16 +101,50 @@
               </div>
             </div>
           </div>
+          <div class="center-align" style="margin-top: 1rem">
+            <span class="interTitle"> HOBBIES </span>
+            <P>
+              <img src="assets/img/music.png" width="50px">
+              <img src="assets/img/moto.png" width="50px">
+              <img src="assets/img/book.png" width="50px">
+              <img src="assets/img/beer.png" width="50px">
+            </P>
+          </div>
+
+          <div class="center-align">
+            <div class="interTitle fontBold">Sobre Mim</div>
+            Tenho 21 anos, sou founder de uma start-up voltado a ambiente online onde desenvolvemos sites e sistemas web para pequenas e medias empresas, e estou em busca de novas experiencias profissionais para poder me desenvolver dentro da minha area. Gostaria de uma oportunidade para poder trabalhar junto a equipe Advise de programaçao
+          </div>
+
+          <div class="center-align">
+            <div class="interTitle fontBold">Interesses Profissionais</div>
+            Aumentar a gama de conhecimentos dentro da Area Front-End;
+            <BR> React.JS (Estudando)
+          </div>
+
+
         </div>
 
-        <div class="col s12 l8">
-          <div class="interAbout interCorte">
-            <div class="interTitle fontBold">Sobre Mim</div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="col s12 l8" style="margin-top: -1rem !important">
+          <div class="interCorte" style="margin-top: 1rem">
+            <div class="interTitle fontBold">Estudos e Educaçao</div>
+            <div class="center-align" style="width: 100%">
+              <P> Ensino Medio Concluido - CETOP/RJ- Rio de Janeiro 2015 </P>
+              <P> Engenharia Eletrica (em andamento) - Pitagoras/Londrina 2018 - 2023 </P>
+            </div>
           </div>
           <div class="interXP interCorte" id="">
             <div class="interTitle fontBold">Experiencias Profissionais</div>
             <div id="XPDATA"></div>
+            <!-- GETJSON -->
+          </div>
+          <div class="interXP" id="">
+            <div class="row">
+              <div class="interTitleMinus fontBold col l6">Expertize Profissionais</div>
+              <div class="interTitleMinus fontBold col l6">Habilidades Pessoais</div>
+            </div>
+
+            <div id="HABDATA"></div>
             <!-- GETJSON -->
           </div>
 
@@ -114,12 +152,6 @@
       </div>
     </section>
 
-
-    <script type="text/javascript">
-
-
-
-    </script>
     <script type="text/javascript" src="assets/js/api.js"> </script>
 
   </body>
