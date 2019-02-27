@@ -1,0 +1,189 @@
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu'
+}
+
+a {
+	color: #2196f3 !important;
+	text-decoration: none;
+}
+
+.rowblock {
+	margin-bottom: 5px !important; 
+	display: flex;
+}
+
+.l4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.l8 {
+    width: 66.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.l2 {
+    width: 16.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.l3 {
+    width: 25%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.l5 {
+    width: 41.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.l7 {
+    width: 58.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.l9 {
+    width: 75%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row .col {
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+}
+
+.center-align {
+	text-align: center;
+	justify-content: center;
+}
+
+.darken {
+	background-color: #212121;
+	color: white;
+}
+
+.lighten {
+	background-color: white;
+	color: #212121;
+}
+
+.fontLight {
+	font-weight: 300
+}
+
+.fontBold {
+	font-weight: 700;
+}
+
+.interCorte {
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 15px
+}
+
+
+/* NAV */
+nav {
+	text-align: center;
+	display: inline-table !important;
+	width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.navTitle {
+	font-size: 2.5rem;
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.navSubTitle {
+	margin-bottom: 2rem;
+	font-size: 1.2rem
+}
+
+/* SUBNAV */
+.contactControl {
+	border-top: 1px solid lightgray;
+	padding-top: 1rem;	
+	padding-bottom: 1rem;
+	margin-bottom: 0px !important;
+	display: flex;
+}
+
+.centerControl {
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray
+}
+
+/* CONTAINER */
+.interXP {
+	margin-top: 1rem;
+	display: inline-block;
+}
+
+.interXP > .row {
+	margin-bottom: 15px !important
+}
+
+.interTitle {
+	font-size: 1.3rem !important;
+	margin: 15px 
+}
+
+
+/*  */
+
+.rangemarker {
+	margin-left: 2px !important;
+	height: 15px;
+}
+
+.blue {
+	background-color: #2196f3;
+}
+
+.darken-1 {
+	background-color: #1e88e5 !important;
+}
+
+.darken-2 {
+	background-color: #1976d2 !important;
+}
+
+.darken-3 {
+	background-color: #1565c0 !important;
+}
+
+.darken-4 {
+	background-color: #0d47a1 !important;
+}

@@ -1,45 +1,126 @@
 <html>
 <head>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-
-<script>
-
-    $(function() {
 
 
-   var people = [];
+  <meta http-equiv= "Content-Type" content= "text/html; charset=UTF-8" />
 
-   $.getJSON('assets/js/rest.js', function(data) {
-       $.each(data.jobs, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.id + "</td>" +
-           "<td>" + f.getIn + "</td>" + "<td>" + f.getOut + "</td>" + "<td>" + f.business + "</td>" + "</tr>"
-           $(tblRow).appendTo("#userdata tbody");
-     });
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
 
-   });
 
-});
-</script>
+  <script>
+
+
+  </script>
 </head>
 
 <body>
+  <header>
+    <button onclick="mudar()">text</button>
+    <script type="text/javascript">
+      function mudar() {
+        var element = document.getElementById("changed");
+        element.classList.remove("darken");
+        element.classList.add("lighten");
+      }
+    </script>
+  </header>
+  <nav class="darken" id="changed">
+    <div class="container">
 
-<div class="wrapper">
-<div class="profile">
-   <table id= "userdata" border="2">
-  <thead>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email Address</th>
-            <th>City</th>
-        </thead>
-      <tbody>
+      <header class="navTitle fontBold">
+        Pedro Henrique Vasconcellos Cordista
+      </header>
+      <div class="navSubTitle fontLight">
+        &#60;DEVELOPER FRONT-END /&#62;
+      </div>
+    </div>
+  </nav>
 
-       </tbody>
-   </table>
+  <section class="darken" id="changed">
+    <div class="container">
+      <div class="row contactControl">
+        <div class="col s12 l4 center-align fontLight contactDiv">
+          <div class="containerTitle fontBold">
+            TELEFONE
+          </div>
+          <div>43 98402-4886</div>
+        </div>
+        <div class="col s12 l4 center-align fontLight contactDiv centerControl">
+          <div class="containerTitle fontBold">
+            E-MAIL
+          </div>
+          <a href="mailto:pcordista368@gmail.com">pcordista368@gmail.com</a>
+        </div>
+        <div class="col s12 l4 center-align fontLight contactDiv">
+          <div class="containerTitle fontBold">
+            ENDEREÇO
+          </div>
+          43 98402-4886
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
-</div>
 
-</body>
-</html>
+  <section>
+    <div class="container">
+      <div class="row">
+
+        <div class="col s12 l4 darken" id="changed">
+          <div class="photo center-align">
+            <img src="https://mindbodygreen-res.cloudinary.com/images/w_767,q_auto:eco,f_auto,fl_lossy/usr/QKNTXGf/james-dinicolantonio-pharmd.jpg" width="70%" class="circle">
+          </div>
+          <div class="center-align">
+            <P> 21 Anos </P>
+          </div>
+          <div class=""></div>
+          <div class="center-align">
+            <div class="row rowblock">
+              <div class="col s5 l5"> Portugues </div>
+              <div class="col s7 l7">
+                <div class="col s2 l2 rangemarker darken-4"></div>
+                <div class="col s2 l2 rangemarker darken-3"></div>
+                <div class="col s2 l2 rangemarker darken-2"></div>
+                <div class="col s2 l2 rangemarker darken-1"></div>
+                <div class="col s2 l2 rangemarker blue"></div>
+              </div>
+            </div>
+            <div class="row rowblock">
+              <div class="col s5 l5"> Ingles </div>
+              <div class="col s7 l7">
+                <div class="col s2 l2 rangemarker darken-4"></div>
+                <div class="col s2 l2 rangemarker darken-3"></div>
+                <div class="col s2 l2 rangemarker darken-2"></div>
+                <div class="col s2 l2 rangemarker darken-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 l8">
+          <div class="interAbout interCorte">
+            <div class="interTitle fontBold">Sobre Mim</div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="interXP interCorte" id="">
+            <div class="interTitle fontBold">Experiencias Profissionais</div>
+            <div id="XPDATA"></div>
+            <!-- GETJSON -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <script type="text/javascript">
+
+
+
+    </script>
+    <script type="text/javascript" src="assets/js/api.js"> </script>
+
+  </body>
+  </html>
