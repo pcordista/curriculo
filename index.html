@@ -26,6 +26,20 @@
 </head>
 
 <body>
+
+<section class="bg">
+    <div class="bgfull">
+      <div class="middle">
+        <div class="eu fontBold">
+          <span>Pedro Cordista</span>
+        </div>
+        <div class="eudois fontLight">
+          <span>Web Programming</span>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/bg.jpg" width="100%">
+  </section>
   <header class="darken" id="header">
     <button onclick="toogle()" class="btntoogle"><img src="assets/img/night.png" width="40px" id="imgbtn"></button>
   </header>
@@ -71,7 +85,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col s12 l4 darken" id="changed" style="padding-bottom: 2rem">
+        <aside class="col s12 l4 darken paddingbtm">
           <div class="photo center-align">
             <img src="assets/img/eu.jpg" width="70%" class="circle">
           </div>
@@ -83,7 +97,7 @@
           <div class="center-align">
             <div class="row rowblock">
               <div class="col s5 l5"> Português </div>
-              <div class="col s7 l7">
+              <div class="col s7 l7 rangemarkercontrol">
                 <div class="col s2 l2 rangemarker darken-4"></div>
                 <div class="col s2 l2 rangemarker darken-3"></div>
                 <div class="col s2 l2 rangemarker darken-2"></div>
@@ -93,7 +107,7 @@
             </div>
             <div class="row rowblock">
               <div class="col s5 l5"> Inglês </div>
-              <div class="col s7 l7">
+              <div class="col s7 l7 rangemarkercontrol">
                 <div class="col s2 l2 rangemarker darken-4"></div>
                 <div class="col s2 l2 rangemarker darken-3"></div>
                 <div class="col s2 l2 rangemarker darken-2"></div>
@@ -101,7 +115,7 @@
               </div>
             </div>
           </div>
-          <div class="center-align" style="margin-top: 1rem">
+          <div class="center-align margintop" style="">
             <span class="interTitle"> HOBBIES </span>
             <P>
               <img src="assets/img/music.png" width="50px">
@@ -120,39 +134,83 @@
             <div class="interTitle fontBold">Interesses Profissionais</div>
             Aumentar a gama de conhecimentos dentro da área de Programação Front-End;
             <BR> React.JS (Estudando)
-          </div>
+            </div>
 
 
+          </aside>
+
+          <article class="col s12 l8 inversemargintop">
+            <div class="interCorte margintop">
+              <div class="interTitle fontBold">Estudos e Educação</div>
+              <div class="center-align">
+                <P> Ensino Medio Concluído - CETOP/RJ- Rio de Janeiro 2015 </P>
+                <P> Engenharia Elétrica (em andamento) - Pitágoras/Londrina 2018 - 2023 </P>
+              </div>
+            </div>
+            <div class="interXP interCorte" id="">
+              <div class="interTitle fontBold">Experiências Profissionais</div>
+              <div id="XPDATA"></div>
+              <!-- GETJSON -->
+            </div>
+            <div class="interXP" id="">
+              <div class="row">
+                <div class="interTitleMinus fontBold col l6">Expertize Profissional</div>
+                <div class="interTitleMinus fontBold col l6">Habilidades Pessoais</div>
+              </div>
+
+              <div id="HABDATA"></div>
+              <!-- GETJSON -->
+            </div>
+
+            <div class="play">
+  <div class="wrapper">
+    <div class="border-circle" id="one"></div>
+    <div class="border-circle" id="two"></div>
+    <div class="background-circle">
+      <div class="triangle-light"></div>
+      <div class="body"></div>
+      <span class="shirt-text">I</span>
+      <span class="shirt-text">♥</span>
+      <span class="shirt-text">C</span>
+      <span class="shirt-text">S</span>
+      <span class="shirt-text">S</span>
+      <div class="triangle-dark"></div>
+    </div>
+    <div class="head">
+      <div class="ear" id="left"></div>
+      <div class="ear" id="right"></div>
+      <div class="hair-main">
+        <div class="sideburn" id="left"></div>
+        <div class="sideburn" id="right"></div>
+        <div class="hair-top"></div>
+      </div>
+      <div class="face">
+        <div class="hair-bottom"></div>
+        <div class="nose"></div>
+        <div class="eye-shadow" id="left">
+          <div class="eyebrow"></div>
+          <div class="eye"></div>
         </div>
-
-        <div class="col s12 l8" style="margin-top: -1rem !important">
-          <div class="interCorte" style="margin-top: 1rem">
-            <div class="interTitle fontBold">Estudos e Educação</div>
-            <div class="center-align" style="width: 100%">
-              <P> Ensino Medio Concluído - CETOP/RJ- Rio de Janeiro 2015 </P>
-              <P> Engenharia Elétrica (em andamento) - Pitágoras/Londrina 2018 - 2023 </P>
-            </div>
-          </div>
-          <div class="interXP interCorte" id="">
-            <div class="interTitle fontBold">Experiências Profissionais</div>
-            <div id="XPDATA"></div>
-            <!-- GETJSON -->
-          </div>
-          <div class="interXP" id="">
-            <div class="row">
-              <div class="interTitleMinus fontBold col l6">Expertize Profissional</div>
-              <div class="interTitleMinus fontBold col l6">Habilidades Pessoais</div>
-            </div>
-
-            <div id="HABDATA"></div>
-            <!-- GETJSON -->
-          </div>
-
+        <div class="eye-shadow" id="right">
+          <div class="eyebrow"></div>
+          <div class="eye"></div>
+        </div>
+        <div class="mouth"></div>
+        <div class="shadow-wrapper">
+          <div class="shadow"></div>
         </div>
       </div>
-    </section>
+    </div>
+    <span class="music-note" id="one">&#9835;</span>
+    <span class="music-note" id="two">&#9834;</span>
+  </div>
+</div>
 
-    <script type="text/javascript" src="assets/js/api.js"> </script>
+          </article>
+        </div>
+      </section>
 
-  </body>
-  </html>
+      <script type="text/javascript" src="assets/js/api.js"> </script>
+
+    </body>
+    </html>
