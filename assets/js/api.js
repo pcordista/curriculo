@@ -24,8 +24,8 @@
 
 
 
-const urlXP = "assets/js/rest.js";
-  const urlHAB = "assets/js/hab.js";
+const urlXP = "https://demo3225912.mockable.io/";
+  const urlHAB = "http://demo3225912.mockable.io/pc";
   
   function httpGetAsync(theUrl, callback)
   {
